@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Ns Group | Demoscpía, Eyewatch, Illuminati Lab y Nicestream",
+    name: "Ns Group | Comunicación Estratégica",
     short_name: "Ns Group",
     description:
       "Somos un ecosistema de comunicación estratégica especializado en asuntos empresariales, inteligencia electoral y public affairs.",

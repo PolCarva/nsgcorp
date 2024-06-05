@@ -1,5 +1,11 @@
+import AboutSection from "@/components/AboutSection";
+import HeroSection from "@/components/HeroSection";
+
 export default function Home() {
-  return <main className="">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, voluptatum consectetur quod praesentium animi. Blanditiis quaerat labore vitae, autem inventore, eveniet commodi soluta eos nostrum fugit in molestias amet!
-  </main>;
+  return (
+    <main className="flex flex-col gap-16">
+      <HeroSection />
+      <AboutSection />
+    </main>
+  );
 }

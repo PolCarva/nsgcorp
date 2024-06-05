@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-helvetica: 'Helvetica', sans-serif;
+  --font-durk: 'Durk', sans-serif;
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.font-durk {
+  font-family: var(--font-durk);
+}
+
+.font-helvetica {
+  font-family: var(--font-helvetica);
 }
