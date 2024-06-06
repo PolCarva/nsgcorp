@@ -13,7 +13,7 @@ const PostCard = ({ post }: { post: Post }) => {
   };
 
   return (
-    <Link href={`/${post.slug}`} className="w-full hover:scale-105 hover:bg-primary/5 transition grid gap-x-5 md:grid-cols-12 grid-cols-1 p-5 border-y-2 border-primary">
+    <Link href={`/${post.slug}`} className="w-full md:hover:scale-105 hover:bg-primary/5 transition grid gap-x-5 md:grid-cols-12 grid-cols-1 p-5 border-y-2 border-primary">
       {post.featuredImage ? (
         <Image
           className="col-span-12 md:col-span-4 transition object-cover w-full h-full aspect-video"
@@ -25,7 +25,7 @@ const PostCard = ({ post }: { post: Post }) => {
       ) : (
         <div className="col-span-12 md:col-span-4 bg-slate-200 object-cover w-full h-full aspect-video"></div>
       )}
-      <div className="col-span-8 flex flex-col md:gap-2 mt-2">
+      <div className="col-span-12 md:col-span-8 flex flex-col md:gap-2 mt-2">
         <HeadingThree mobilePosition="left" text={post.title} />
         <p className="text-xl text-ellipsis line-clamp-4 md:line-clamp-6">
           {post.excerpt.replace(/<\/?[^>]+(>|$)/g, "")}
