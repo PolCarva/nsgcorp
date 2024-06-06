@@ -50,7 +50,6 @@ export async function getAllPosts(category?: string) {
 }
 
 export async function getSinglePost(slug: string) {
-  revalidatePath(`/${slug}`)
   const query = {
     query: `query getSinglePost {
             post(id: "${slug}", idType: SLUG) {
