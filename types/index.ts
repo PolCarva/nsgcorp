@@ -32,4 +32,5 @@ export interface Post {
   excerpt: string;
   featuredImage: FeaturedImage;
   categories: Categories;
+  content?: string | TrustedHTML
 }

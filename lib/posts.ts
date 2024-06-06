@@ -2,7 +2,6 @@ import { revalidatePath } from "next/cache";
 import graphqlRequest from "./graphqlRequest";
 
 export async function getAllPosts(category?: string) {
-  revalidatePath("/")
   let categoryFilter = '';
   if (category) {
     categoryFilter = `(where: { categoryName: "${category}" })`;

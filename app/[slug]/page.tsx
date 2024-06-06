@@ -1,26 +1,62 @@
+"use client";
+
 import Container from "@/components/ui/Container";
-import HeadingOne from "@/components/ui/HeadingOne";
-import { getAllPosts, getSinglePost } from "@/lib/posts";
+import PostDetailSketeleton from "@/components/ui/PostDetailSketeleton";
+import { durk } from "@/lib/fonts";
+import { getSinglePost } from "@/lib/posts";
 import { Post } from "@/types";
-import React from "react";
+import { useParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
-export async function generateStaticParams() {
-  const posts = await getAllPosts();
+const Page = () => {
+  const [post, setPost] = useState<Post | null>(null);
+  const { slug } = useParams();
 
-  return posts.nodes.map((post: Post) => ({
-    params: { slug: post.slug },
-  }));
-}
+  useEffect(() => {
+    const fetchPost = async () => {
+      if (typeof slug === "string") {
+        const postData = await getSinglePost(slug);
+        setPost(postData);
+      } else {
+        console.error("Invalid slug type:", slug);
+      }
+    };
+    fetchPost();
+  }, [slug]);
 
-// Este componente recibirá los props estáticamente generados por Next.js
-export default async function Page({ params }: { params: { slug: string } }) {
-  const { slug } = params;
-  const post = await getSinglePost(slug);
+  useEffect(() => {
+    if (post && post.content) {
+      // Espera a que el contenido se haya renderizado
+      const container = document.getElementById("post-content");
+      if (container) {
+        const buttons = container.querySelectorAll(".wp-block-button__link.wp-element-button");
+        buttons.forEach(button => {
+          button.classList.add(durk.className);
+        });
+      }
+    }
+  }, [post]);
+
+  if (!post) {
+    return <PostDetailSketeleton />;
+  }
 
   return (
     <Container>
-      <HeadingOne text={post.title} />
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <div className="md:w-2/3 mx-auto flex flex-col gap-5 justify-center items-start pb-12">
+        <h1 className={`${durk.className} self-start uppercase text-9xl`}>
+          {post.title}
+        </h1>
+        {post.content && (
+          <div
+            id="post-content"
+            className="space-y-5"
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+        )}
+      </div>
     </Container>
   );
-}
+};
+
+export default Page;

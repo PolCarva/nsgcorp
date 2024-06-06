@@ -24,3 +24,15 @@
 .font-helvetica {
   font-family: var(--font-helvetica);
 }
+
+.wp-block-button {
+  @apply  grid md:w-fit
+}
+
+.wp-block-button a {
+  @apply px-8 py-4 bg-primary text-center text-white uppercase tracking-wider transition text-2xl hover:bg-primary/90
+}
+
+strong {
+  @apply text-primary
+}
