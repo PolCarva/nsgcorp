@@ -44,7 +44,7 @@ const Page = () => {
   return (
     <Container>
       <div className="md:w-2/3 mx-auto flex flex-col gap-5 justify-center items-start pb-12">
-        <h1 className={`${durk.className} self-start uppercase text-9xl`}>
+        <h1 className={`${durk.className} self-start uppercase text-6xl md:text-9xl`}>
           {post.title}
         </h1>
         {post.content && (
