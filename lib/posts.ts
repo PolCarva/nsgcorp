@@ -1,6 +1,8 @@
+import { revalidatePath } from "next/cache";
 import graphqlRequest from "./graphqlRequest";
 
 export async function getAllPosts(category?: string) {
+  revalidatePath("/")
   let categoryFilter = '';
   if (category) {
     categoryFilter = `(where: { categoryName: "${category}" })`;
@@ -48,6 +50,7 @@ export async function getAllPosts(category?: string) {
 }
 
 export async function getSinglePost(slug: string) {
+  revalidatePath(`/${slug}`)
   const query = {
     query: `query getSinglePost {
             post(id: "${slug}", idType: SLUG) {
