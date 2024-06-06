@@ -7,7 +7,7 @@ import PresenceAndPerformance from "./ui/PresenceAndPerformance";
 
 const AboutSection = () => {
   return (
-    <section id="nosotros">
+    <section id="nosotros" className="pt-20">
       <Container>
        <HeadingTwo top={"¿Quiénes"} bottom={"Somos?"} />
         <AboutTexts />

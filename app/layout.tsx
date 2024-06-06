@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`max-w-[100svw] ${helvetica.className}`}>
         <Header />
-        <main className="pt-20 md:pt-32">{children}</main>
+        <main className="pt-20 md:pt-5">{children}</main>
       </body>
     </html>
   );

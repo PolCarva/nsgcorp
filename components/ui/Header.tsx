@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { helvetica } from "@/lib/fonts";
-import Container from "./Container";
 
 const navItems = [
   { name: "Nosotros", href: "#nosotros" },
@@ -21,7 +20,7 @@ const Header = () => {
 
   return (
     <header
-      className={`${helvetica.className} container p-5 mx-auto fixed right-0 left-0 bg-white flex justify-between items-center py-5 z-50`}
+      className={`${helvetica.className} container p-5 mx-auto fixed md:sticky top-0 right-0 left-0 bg-white flex justify-between items-center py-5 z-50`}
     >
       <Link href="/" className="max-w-32 md:max-w-full">
         <Image
@@ -35,6 +34,7 @@ const Header = () => {
       <nav className="hidden md:flex gap-5 uppercase">
         {navItems.map((item) => (
           <Link
+            scroll
             key={item.name}
             href={item.href}
             className="relative hover:after:translate-y-0 p-5 overflow-hidden after:absolute after:w-full after:h-full after:inset-0 after:-translate-y-full after:transition after:duration-300 after:-z-10 after:bg-primary hover:text-white transition duration-300"
