@@ -15,7 +15,7 @@ const ApproachCard = ({
       <div className="w-1/2 md:w-52 aspect-square bg-primary grid place-content-center text-white font-bold">
         {icon}
       </div>
-      <HeadingFour text={title} />
+      <HeadingFour position="center" text={title} />
       {paragraph}
     </div>
   );

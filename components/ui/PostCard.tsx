@@ -27,7 +27,7 @@ const PostCard = ({ post }: { post: Post }) => {
       )}
       <div className="col-span-12 md:col-span-8 flex flex-col md:gap-2 mt-2">
         <HeadingThree mobilePosition="left" text={post.title} />
-        <p className="text-xl text-ellipsis line-clamp-4 md:line-clamp-6">
+        <p className="text-xl text-ellipsis line-clamp-4 lg:line-clamp-6">
           {post.excerpt.replace(/<\/?[^>]+(>|$)/g, "")}
         </p>
       </div>

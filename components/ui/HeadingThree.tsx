@@ -16,12 +16,12 @@ const HeadingThree = ({
     <h3
       className={`${
         durk.className
-      } text-5xl md:text-8xl uppercase ${
+      } text-5xl lg:text-8xl uppercase ${
         position === "center"
-          ? "md:text-center"
+          ? "lg:text-center"
           : position === "right"
-          ? "md:text-right"
-          : "md:text-left"
+          ? "lg:text-right"
+          : "lg:text-left"
       }
       ${
         mobilePosition === "center"

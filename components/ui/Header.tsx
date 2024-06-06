@@ -20,10 +20,10 @@ const Header = () => {
 
   return (
     <header
-      className={`${helvetica.className} w-full p-5 mx-auto fixed md:sticky top-0 right-0 left-0 bg-white  py-5 z-50`}
+      className={`${helvetica.className} w-full mx-auto fixed md:sticky top-0 right-0 left-0 bg-white  py-5 z-50`}
     >
-      <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="max-w-32 md:max-w-full">
+      <div className="container 2xl:max-w-screen-xl px-5 mx-auto flex justify-between items-center">
+        <Link href="/" className="max-w-32 md:max-w-max">
           <Image
             className="relative w-full z-50"
             alt="Logo Nsgroup"

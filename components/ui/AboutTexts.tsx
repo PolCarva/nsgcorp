@@ -3,9 +3,9 @@ import HeadingThree from "./HeadingThree";
 
 const TextosQuienesSomos = () => {
   return (
-    <div className="grid gap-x-5 gap-y-12 md:gap-y-20 w-full grid-cols-1 mb-20 md:mb-16 md:grid-cols-12">
+    <div className="grid lg:gap-x-20 gap-y-12 md:gap-y-20 w-full grid-cols-1 mb-20 lg:mb-16 lg:grid-cols-12">
       {/* --- ABOUT --- */}
-      <div className="col-span-6 text-2xl mt-8 md:-mt-12">
+      <div className="col-span-6 text-2xl mt-8 lg:-mt-12">
         <p className="mb-5">
           Somos un{" "}
           <span className="font-bold text-primary">

@@ -1,3 +1,10 @@
+export type ClientSliderItem = {
+  src: string;
+  name: string;
+  height: number;
+  width: number;
+};
+
 interface ImageSize {
   sourceUrl: string;
   width: string;
@@ -32,5 +39,5 @@ export interface Post {
   excerpt: string;
   featuredImage: FeaturedImage;
   categories: Categories;
-  content?: string | TrustedHTML
+  content?: string | TrustedHTML;
 }

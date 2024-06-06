@@ -6,6 +6,8 @@ import { getAllPosts } from "@/lib/posts";
 import { Post } from "@/types";
 import PostCard from "./ui/PostCard";
 import PostCardSkeleton from "./ui/PostCardSkeleton";
+import ClientSlider from "./ui/ClientSlider";
+import HeadingThree from "./ui/HeadingThree";
 
 const CompaniesSection = () => {
   const [posts, setPosts] = useState<Post[] | null>(null);
@@ -34,6 +36,10 @@ const CompaniesSection = () => {
             ))}
           </div>
         )}
+        <div className="mt-16 flex flex-col gap-5">
+          <HeadingThree text="Clientes" position="center" />
+          <ClientSlider />
+        </div>
       </Container>
     </section>
   );

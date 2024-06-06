@@ -11,13 +11,13 @@ const PresenceAndPerformanceCard = ({
 }) => {
   return (
     <div className="bg-primary aspect-square text-white relative order-1">
-      <p className="text-[8rem] md:text-[12rem] absolute aspect-square left-5 font-bold">
+      <p className="text-[8rem] md:text-[5rem] lg:text-[10rem] absolute aspect-square left-5 font-bold">
         {number}
-        <span className="text-6xl lg:text-7xl 2xl:text-8xl font-normal">
+        <span className="text-6xl lg:text-6xl 2xl:text-7xl font-normal">
           {mesure}
         </span>
       </p>
-      <p className="text-4xl md:text-5xl 2xl:text-6xl uppercase absolute leading-[80%] md:-bottom-2 -bottom-1 right-5 text-right">
+      <p className="text-5xl md:text-2xl lg:text-5xl 2xl:text-5xl uppercase absolute leading-[80%] bottom-1 right-5 text-right">
         {text}
       </p>
     </div>
