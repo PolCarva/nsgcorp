@@ -15,8 +15,15 @@ const config: Config = {
       },
       colors: {
         primary: {
-          DEFAULT: "#0066cc",
+          DEFAULT: "#3887E5",
+          alternativo: "#0066cc"
         },
+        white: {
+          DEFAULT: "white",
+        },
+        black: {
+          DEFAULT: "black",
+        }
       },
       fontFamily: {
         helvetica: ["var(--font-helvetica)"],
