@@ -22,7 +22,7 @@ const CompaniesSection = () => {
   }, []);
 
   return (
-    <section id="empresas" className="pt-20 min-h-svh">
+    <section id="empresas" className="pt-20">
       <Container>
         <div className="flex flex-col gap-2 relative">
           <Tag
@@ -43,7 +43,7 @@ const CompaniesSection = () => {
             ))}
           </div>
         )}
-        <div className="mt-16 flex flex-col gap-5">
+        <div className="mt-40 flex flex-col gap-5">
           <HeadingThree text="Clientes" position="center" />
           <ClientSlider />
         </div>

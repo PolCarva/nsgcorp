@@ -14,7 +14,7 @@ import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-// Crear un array dinámico de 45 elementos
+// Crear un array dinámico de 55 elementos
 const clients: ClientSliderItem[] = Array.from({ length: 55 }, (_, index) => ({
   name: `Cliente ${index + 1}`,
   src: `/img/clients/${index + 1}.jpg`,
@@ -23,14 +23,14 @@ const clients: ClientSliderItem[] = Array.from({ length: 55 }, (_, index) => ({
 }));
 
 const ClientSlider = () => {
-  const [clientsPerSlide, setClientsPerSlide] = useState(3);
+  const [clientsPerSlide, setClientsPerSlide] = useState(6);
 
   useEffect(() => {
     const updateClientsPerSlide = () => {
       if (window.innerWidth >= 768) {
         setClientsPerSlide(12);
       } else {
-        setClientsPerSlide(3);
+        setClientsPerSlide(6);
       }
     };
 
@@ -45,7 +45,7 @@ const ClientSlider = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (_: number, className: string) {
-      return `<span class="!w-8 md:!w-16 !h-1 !hidden md:!inline-block !rounded-none ${className}"></span>`;
+      return `<span class="!w-8 md:!w-16 !h-1 !rounded-none ${className}"></span>`;
     },
   };
 
@@ -54,26 +54,21 @@ const ClientSlider = () => {
     slides.push(
       <SwiperSlide key={i}>
         <div
-          className={`w-full grid gap-y-3 mb-10 cursor-grab ${
+          className={`w-full grid gap-y-3 mb-20 md:mb-10 cursor-grab ${
             clientsPerSlide === 12
               ? "md:grid-cols-6 grid-rows-2"
-              : "grid-cols-3"
+              : "grid-cols-3 grid-rows-2"
           }`}
         >
-          {clients.slice(i, i + clientsPerSlide).map((client, index) => {
-            const globalIndex = i + index;
-            const addMarginTop = clientsPerSlide === 3 && globalIndex % 2 === 1;
-            return (
-              <Image
-                key={index}
-                alt={client.name}
-                width={client.width}
-                height={client.height}
-                src={client.src}
-                className={`${addMarginTop ? "mt-5" : ""}`}
-              />
-            );
-          })}
+          {clients.slice(i, i + clientsPerSlide).map((client, index) => (
+            <Image
+              key={index}
+              alt={client.name}
+              width={client.width}
+              height={client.height}
+              src={client.src}
+            />
+          ))}
         </div>
       </SwiperSlide>
     );
