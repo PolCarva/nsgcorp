@@ -2,11 +2,13 @@ import React from "react";
 import Container from "./ui/Container";
 import HeadingTwo from "./ui/HeadingTwo";
 import SolutionCard from "./ui/SolutionCard";
+import Tag from "./ui/Tag";
 
 const SolutionsSection = () => {
   return (
     <section id="soluciones" className="pt-20">
       <Container>
+        <Tag text="Expertease" />
         <HeadingTwo top="Nuestras" bottom="soluciones" />
         <div className="flex flex-col gap-16 mt-16">
           <div className="w-full">

@@ -1,6 +1,7 @@
 import React from "react";
 import HeadingThree from "./HeadingThree";
 import PresenceAndPerformanceCard from "./PresenceAndPerformanceCard";
+import Tag from "./Tag";
 
 const PresenceAndPerformance = () => {
   return (
@@ -8,6 +9,7 @@ const PresenceAndPerformance = () => {
       <PresenceAndPerformanceCard number={11} text="Países" />
       <PresenceAndPerformanceCard number={77} mesure="MM" text="Personas Alcanzadas" />
       <div className="h-fit md:aspect-square relative grid items-center order-0 md:order-1">
+        <Tag text="Alcance" className="absolute hidden md:inline top-0 right-0" />
         <HeadingThree text="Presencia & Desempeño" position="right" />
       </div>
       <div className="order-1"></div>

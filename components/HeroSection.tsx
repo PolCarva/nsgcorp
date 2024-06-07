@@ -13,7 +13,7 @@ const HeroSection = () => {
           <h1
             className={`uppercase leading-normal md:leading-none relative tracking-wider text-[3.9rem] lg:text-[10rem] ${durk.className}`}
           >
-            <Tag text="Ns Group" className="absolute bottom-full left-0" />
+            <Tag text="Especialistas en" className="absolute bottom-full left-0" />
             <span className="bg-white scale-105 pl-[5%] md:pl-0 md:scale-100 w-full md:w-fit pr-5 block">
               Social Science
             </span>
