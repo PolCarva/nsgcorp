@@ -2,7 +2,7 @@ import { revalidatePath } from "next/cache";
 import graphqlRequest from "./graphqlRequest";
 
 export async function getAllPosts(category?: string) {
-  let categoryFilter = '';
+  let categoryFilter = "";
   if (category) {
     categoryFilter = `(where: { categoryName: "${category}" })`;
   }
@@ -40,8 +40,8 @@ export async function getAllPosts(category?: string) {
           startCursor
         }
       }
-    }`
-  }
+    }`,
+  };
 
   const resJson = await graphqlRequest(query);
   const allPosts = resJson.data.posts;
@@ -77,7 +77,7 @@ export async function getSinglePost(slug: string) {
                 }
               }
             }
-          }`
+          }`,
   };
 
   const resJson = await graphqlRequest(query);
