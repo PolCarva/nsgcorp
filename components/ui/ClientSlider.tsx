@@ -15,7 +15,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 // Crear un array dinámico de 55 elementos
-const clients: ClientSliderItem[] = Array.from({ length: 55 }, (_, index) => ({
+const clients: ClientSliderItem[] = Array.from({ length: 56 }, (_, index) => ({
   name: `Cliente ${index + 1}`,
   src: `/img/clients/${index + 1}.jpg`,
   width: 255,
