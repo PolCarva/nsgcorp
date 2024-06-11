@@ -20,19 +20,19 @@ const Header = () => {
 
   return (
     <header
-      className={`${helvetica.className} w-full mx-auto fixed md:sticky top-0 right-0 left-0 bg-white  py-5 z-50`}
+      className={`${helvetica.className} w-full mx-auto fixed md:sticky top-0 right-0 left-0 bg-[url("/img/banner.webp")]  py-5 z-50`}
     >
       <div className="container 2xl:max-w-screen-xl px-5 mx-auto flex justify-between items-center">
         <Link href="/" className="max-w-32 md:max-w-max">
           <Image
             className="relative w-full z-50"
-            alt="Logo Nsgroup"
-            src="/logo_negro.png"
+            alt="Logo Ns Group"
+            src={menuOpen ? "/img/logo_negro.webp" : "/img/logo_blanco.webp"}
             width={185}
             height={38}
           />
         </Link>
-        <nav className="hidden md:flex gap-5 uppercase">
+        <nav className="hidden md:flex gap-5 uppercase text-white">
           {navItems.map((item) => (
             <Link
               scroll
@@ -48,9 +48,21 @@ const Header = () => {
           className="md:hidden flex flex-col gap-1.5 p-2 z-50"
           onClick={toggleMenu}
         >
-          <span className="block w-6 h-0.5 bg-black"></span>
-          <span className="block w-6 h-0.5 bg-black"></span>
-          <span className="block w-6 h-0.5 bg-black"></span>
+          <span
+            className={`block w-6 h-0.5 transition ${
+              menuOpen ? "bg-black" : "bg-white"
+            }`}
+          ></span>
+          <span
+            className={`block w-6 h-0.5 transition ${
+              menuOpen ? "bg-black" : "bg-white"
+            }`}
+          ></span>
+          <span
+            className={`block w-6 h-0.5 transition ${
+              menuOpen ? "bg-black" : "bg-white"
+            }`}
+          ></span>
         </button>
         <div
           className={`fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-10 transform transition-transform duration-300 ${
