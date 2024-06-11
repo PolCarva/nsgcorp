@@ -29,6 +29,7 @@ const CompaniesSection = () => {
             text="Ecosistema"
             className="w-fit md:absolute md:top-1/3 md:right-0"
           />
+           <div className='absolute hidden md:block left-52 top-0 -z-10 bg-[url("/img/hero_img.webp")] bg-cover bg-right w-1/3 h-full'/>
           <HeadingTwo top="Nuestras" bottom="Empresas" />
         </div>
         {posts === null ? (

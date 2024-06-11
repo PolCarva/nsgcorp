@@ -50,17 +50,24 @@ const Header = () => {
         >
           <span
             className={`block w-6 h-0.5 transition ${
-              menuOpen ? "bg-black" : "bg-white"
+              menuOpen ? "bg-black opacity-0" : "bg-white"
             }`}
           ></span>
+          <span className="relative h-0.5">
+            <span
+              className={`block absolute inset-0 w-6 h-0.5 transition ${
+                menuOpen ? "bg-black rotate-45" : "bg-white"
+              }`}
+            ></span>
+            <span
+              className={`block absolute inset-0 w-6 h-0.5 transition ${
+                menuOpen ? "bg-black -rotate-45" : "bg-white"
+              }`}
+            ></span>
+          </span>
           <span
             className={`block w-6 h-0.5 transition ${
-              menuOpen ? "bg-black" : "bg-white"
-            }`}
-          ></span>
-          <span
-            className={`block w-6 h-0.5 transition ${
-              menuOpen ? "bg-black" : "bg-white"
+              menuOpen ? "bg-black opacity-0" : "bg-white"
             }`}
           ></span>
         </button>

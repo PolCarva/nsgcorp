@@ -10,9 +10,10 @@ const ApproachCard = ({
   paragraph: ReactElement;
   icon: ReactElement;
 }) => {
+
   return (
     <div className="w-full flex flex-col items-center justify-start gap-4">
-      <div className="w-1/2 md:w-52 aspect-square bg-primary grid place-content-center text-white font-bold">
+      <div className='w-1/2 md:w-52 aspect-square bg-primary bg-cover grid place-content-center text-white font-bold'>
         {icon}
       </div>
       <HeadingFour position="center" text={title} />

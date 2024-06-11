@@ -11,7 +11,7 @@ const HeroSection = () => {
       <section className="h-[80svh] pt-20 md:pt-0 flex items-center">
         <div className="mx-auto w-full flex flex-col justify-center gap-20 md:pl-0 relative">
           <div
-            className={`uppercase leading-none relative tracking-wider text-[3.9rem] md:text-9xl 2xl:text-[10rem] lg:text-[9rem] ${durk.className}`}
+            className={`uppercase leading-none relative tracking-wider text-[3.9rem] md:text-9xl 2xl:text-[10rem] lg:text-[8rem] ${durk.className}`}
           >
             <Tag
               text="Nsg Corp"
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 <Link
                   href={"#contacto"}
                   scroll
-                  className={`${helvetica.className} w-full py-5 md:px-[12%] md:py-8 md:w-fit lg:px-[9.85%] 2xl:px-[6%] grid group place-content-center flex-1 text-white bg-black`}
+                  className={`${helvetica.className} w-full py-5 md:px-[12%] md:py-8 md:w-fit lg:px-[13.74%] 2xl:px-[6%] grid group place-content-center flex-1 text-white bg-black`}
                 >
                   <span className="capitalize group-hover:w-[110%] transition text-xl md:text-2xl relative">
                     Contáctanos
