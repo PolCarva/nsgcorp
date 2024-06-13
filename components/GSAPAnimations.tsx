@@ -56,7 +56,7 @@ const GSAPAnimations = () => {
             trigger: numberElement,
             start: "top 60%",
           },
-          snap: { innerText: 1 }, // para asegurarte de que los números sean enteros
+          snap: { innerText: 1 },
         }
       );
     });
