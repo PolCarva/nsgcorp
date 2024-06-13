@@ -5,9 +5,9 @@ import React, { useState } from "react";
 import { helvetica } from "@/lib/fonts";
 
 const navItems = [
-  { name: "Nosotros", href: "#nosotros" },
-  { name: "Soluciones", href: "#soluciones" },
-  { name: "Empresas", href: "#empresas" },
+  { name: "Nosotros", href: "/#nosotros" },
+  { name: "Soluciones", href: "/#soluciones" },
+  { name: "Empresas", href: "/#empresas" },
   { name: "Equipo", href: "/equipo" },
   { name: "Contacto", href: "#contacto", highligted: true},
 ];
