@@ -46,7 +46,6 @@ const GSAPAnimations = () => {
     images.forEach((tag: any) => {
       gsap.to(tag, {
         opacity: 1,
-        y: 0,
         scrollTrigger: {
           trigger: tag,
           start: "top 70%",
