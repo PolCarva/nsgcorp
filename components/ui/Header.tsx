@@ -8,7 +8,8 @@ const navItems = [
   { name: "Nosotros", href: "#nosotros" },
   { name: "Soluciones", href: "#soluciones" },
   { name: "Empresas", href: "#empresas" },
-  { name: "Contacto", href: "#contacto" },
+  { name: "Equipo", href: "/equipo" },
+  { name: "Contacto", href: "#contacto", highligted: true},
 ];
 
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
               scroll
               key={item.name}
               href={item.href}
-              className="relative hover:after:translate-y-0 p-5 overflow-hidden after:absolute after:w-full after:h-full after:inset-0 after:-translate-y-full after:transition after:duration-300 after:-z-10 after:bg-primary hover:text-white transition duration-300"
+              className={`${item.highligted && "bg-black hover:bg-[#161616] before:absolute before:bg-white before:z-10 before:w-2/3 before:h-px before:bottom-1/4 before:left-1/2 before:-translate-x-1/2 hover:before:scale-x-125 before:transition"} relative hover:after:translate-y-0 p-5 overflow-hidden after:absolute after:w-full after:h-full after:inset-0 after:-translate-y-full after:transition after:duration-300 after:-z-10 after:bg-primary hover:text-white transition duration-300`}
             >
               {item.name}
             </Link>
@@ -80,7 +81,7 @@ const Header = () => {
             <Link
               key={item.name}
               href={item.href}
-              className="text-2xl uppercase p-5"
+              className={`${item.highligted && "w-1/2 bg-black text-white"} text-center text-2xl uppercase p-5`}
               onClick={toggleMenu}
             >
               {item.name}

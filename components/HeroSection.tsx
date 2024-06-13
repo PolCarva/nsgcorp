@@ -20,7 +20,7 @@ const HeroSection = () => {
             ></div>
             <div
               data-animate-loader
-              className="h-0 w-24 left-0 top-1/2 z-50 -translate-y-1/2 opacity-0 absolute bg-primary"
+              className="h-0 w-24 left-0 top-1/2 z-30 -translate-y-1/2 opacity-0 absolute bg-primary"
             />
             <h1 id="title" className="relative">
               <span className="w-full flex relative z-10">
