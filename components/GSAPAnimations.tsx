@@ -2,10 +2,11 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
 
 const GSAPAnimations = () => {
   useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, TextPlugin);
     const titles = gsap.utils.toArray("h2");
     const animateInArray = gsap.utils.toArray("[data-animate-in]");
     const animateStagger = gsap.utils.toArray("[data-animate-stagger]");
@@ -13,34 +14,51 @@ const GSAPAnimations = () => {
     const headings = gsap.utils.toArray("[data-animate-heading]");
     const tl = gsap.timeline();
     const images = gsap.utils.toArray("[data-animate-image]");
+    const numbers = gsap.utils.toArray("[data-animate-increasing-number]");
 
-    tl
-    .to("[data-animate-loader]", {
+    tl.to("[data-animate-loader]", {
       height: "100%",
       opacity: 1,
       duration: 0.5,
       ease: "power2.inOut",
     })
-    .to("[data-animate-loader]", {
-      width: "100%",
-      duration: 0.5,
-      ease: "power2.inOut",
-    })
-    .to("#title", {
-      opacity: 1,
-      duration: 0.01,
-    })
-    .to("[data-animate-loader]", {
-      left: "100%",
-      width: 0,
-      duration: 0.5,
-      ease: "power2.inOut",
-    })
-    .to(headings, {
-      opacity: 1,
-      x: 0,
-      stagger: 0.3,
-      duration: 1,
+      .to("[data-animate-loader]", {
+        width: "100%",
+        duration: 0.5,
+        ease: "power2.inOut",
+      })
+      .to("#title", {
+        opacity: 1,
+        duration: 0.01,
+      })
+      .to("[data-animate-loader]", {
+        left: "100%",
+        width: 0,
+        duration: 0.5,
+        ease: "power2.inOut",
+      })
+      .to(headings, {
+        opacity: 1,
+        x: 0,
+        stagger: 0.3,
+        duration: 1,
+      });
+
+    numbers.forEach((numberElement: any) => {
+      gsap.fromTo(
+        numberElement,
+        { innerText: 0 },
+        {
+          innerText: numberElement.innerText,
+          duration: 3,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: numberElement,
+            start: "top 60%",
+          },
+          snap: { innerText: 1 }, // para asegurarte de que los números sean enteros
+        }
+      );
     });
 
     images.forEach((tag: any) => {
