@@ -56,7 +56,7 @@ const Approach = () => {
   return (
     <div>
       <Heading3 text="Abordaje Sistémico" position="center" />
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-10 mt-16">
+      <div data-animate-stagger className="grid md:grid-cols-3 grid-cols-1 gap-x-5 gap-y-10 mt-16">
         {approachCards.map((item) => (
           <ApproachCard
             key={item.title}

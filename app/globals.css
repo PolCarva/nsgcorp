@@ -41,3 +41,10 @@ strong {
   @apply w-full h-full aspect-video object-cover
 }
 
+#title {
+  opacity: 0;
+}
+
+[data-animate-image] {
+  opacity: 0;
+}

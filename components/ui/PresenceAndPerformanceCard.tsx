@@ -10,7 +10,7 @@ const PresenceAndPerformanceCard = ({
   text: string;
 }) => {
   return (
-    <div className="bg-primary aspect-square text-white relative order-1">
+    <div className="bg-primary aspect-square text-white relative order-1" data-animate-in>
       <p className="text-[8rem] md:text-[5rem] lg:text-[10rem] absolute aspect-square left-5 font-bold">
         {number}
         <span className="text-6xl lg:text-6xl 2xl:text-7xl font-normal">

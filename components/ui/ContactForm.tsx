@@ -178,7 +178,7 @@ const ContactForm = () => {
           />
         </label>
         <button
-          className="md:w-1/3 w-full py-5 text-4xl uppercase tracking-wider self-end bg-primary text-white"
+          className="md:w-1/3 w-full py-5 text-4xl uppercase tracking-wider self-end hover:bg-primary-alternativo transition bg-primary text-white"
           type="submit"
           disabled={formState === "loading"}
         >

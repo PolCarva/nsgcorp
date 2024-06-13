@@ -14,9 +14,8 @@ const HeadingThree = ({
 }) => {
   return (
     <h3
-      className={`${
-        durk.className
-      } text-5xl lg:text-8xl uppercase ${
+      data-animate-in
+      className={`${durk.className} text-5xl lg:text-8xl uppercase ${
         position === "center"
           ? "lg:text-center"
           : position === "right"

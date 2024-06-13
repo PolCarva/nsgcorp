@@ -10,7 +10,7 @@ const SolutionsSection = () => {
       <Container>
         <div className="relative">
           <Tag text="Expertease" />
-          <div className='absolute hidden md:block left-60 top-0 -z-10 bg-[url("/img/hero_img.webp")] bg-cover bg-right w-1/2 h-5/6' />
+          <div  data-animate-image  className='absolute hidden md:block left-60 top-0 -z-10 bg-[url("/img/hero_img.webp")] bg-cover bg-right w-1/2 h-5/6' />
           <HeadingTwo top="Nuestras" bottom="soluciones" />
         </div>
         <div className="flex flex-col gap-16 mt-16">
