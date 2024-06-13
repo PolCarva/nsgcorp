@@ -54,7 +54,7 @@ const GSAPAnimations = () => {
           ease: "power1.inOut",
           scrollTrigger: {
             trigger: numberElement,
-            start: "top 60%",
+            start: "top 75%",
           },
           snap: { innerText: 1 },
         }
