@@ -10,18 +10,19 @@ const GSAPAnimations = () => {
     const titles = gsap.utils.toArray("h2");
     const animateInArray = gsap.utils.toArray("[data-animate-in]");
     const animateStagger = gsap.utils.toArray("[data-animate-stagger]");
-    const tags = gsap.utils.toArray("[data-tag]");
+    const tags = gsap.utils.toArray("[data-animation-tag]");
     const headings = gsap.utils.toArray("[data-animate-heading]");
     const tl = gsap.timeline();
     const images = gsap.utils.toArray("[data-animate-image]");
     const numbers = gsap.utils.toArray("[data-animate-increasing-number]");
 
-    tl.to("[data-animate-loader]", {
-      height: "100%",
-      opacity: 1,
-      duration: 0.5,
-      ease: "power2.inOut",
-    })
+    tl
+      .to("[data-animate-loader]", {
+        height: "100%",
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.inOut",
+      })
       .to("[data-animate-loader]", {
         width: "100%",
         duration: 0.5,
@@ -73,6 +74,7 @@ const GSAPAnimations = () => {
 
     tags.forEach((tag: any) => {
       gsap.to(tag, {
+        delay: tag.dataset.delay || 0,
         opacity: 1,
         x: 0,
         scrollTrigger: {

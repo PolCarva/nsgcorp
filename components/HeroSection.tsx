@@ -13,7 +13,7 @@ const HeroSection = () => {
           <div
             className={`uppercase leading-none relative tracking-wider text-[3.9rem] md:text-9xl 2xl:text-[10rem] lg:text-[8rem] ${durk.className}`}
           >
-            <Tag text="Nsg Corp" className="absolute mb-5 bottom-full left-0" />
+            <Tag text="Nsg Corp" delay={1.1} className="absolute mb-5 bottom-full left-0" />
             <div
               data-animate-image
               className='hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-7/12 h-[120%] bg-[url("/img/hero_img.webp")]'
