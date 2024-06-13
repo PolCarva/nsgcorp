@@ -16,8 +16,8 @@ const SolutionsSection = () => {
           />
           <HeadingTwo top="Nuestras" bottom="soluciones" />
         </div>
-        <div className="flex flex-col gap-16 mt-16">
-          <div className="w-full">
+        <div className="mt-16">
+          <div className="w-full flex flex-col gap-20">
             <SolutionCard
               img={"/img/consulting.webp"}
               title="Consultoría"
