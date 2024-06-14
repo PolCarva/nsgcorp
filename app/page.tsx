@@ -7,7 +7,7 @@ import SolutionsSection from "@/components/SolutionsSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-16">
+    <div className="flex flex-col gap-16">
       <GSAPAnimations/>
 
       <HeroSection />
@@ -15,6 +15,6 @@ export default function Home() {
       <SolutionsSection />
       <CompaniesSection />
       <ContactSection />
-    </main>
+    </div>
   );
 }
