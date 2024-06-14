@@ -15,7 +15,7 @@ const CompaniesSection = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getAllPosts();
+      const data = await getAllPosts("empresas");
       setPosts(data.nodes);
     };
     fetchData();
