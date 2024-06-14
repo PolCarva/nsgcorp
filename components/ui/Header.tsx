@@ -8,8 +8,8 @@ const navItems = [
   { name: "Nosotros", href: "/#nosotros" },
   { name: "Soluciones", href: "/#soluciones" },
   { name: "Empresas", href: "/#empresas" },
-/*   { name: "Equipo", href: "/equipo" },
- */  { name: "Contacto", href: "/#contacto", highligted: true},
+  //{ name: "Equipo", href: "/equipo" },
+  { name: "Contacto", href: "/#contacto", highligted: true},
 ];
 
 const Header = () => {
@@ -33,13 +33,13 @@ const Header = () => {
             height={38}
           />
         </Link>
-        <nav className="hidden md:flex gap-5 uppercase text-white">
+        <nav className="hidden md:flex gap-5 md:gap-2 lg:gap-5 uppercase text-sm text-white">
           {navItems.map((item) => (
             <Link
               scroll
               key={item.name}
               href={item.href}
-              className={`${item.highligted && "bg-black hover:bg-[#161616] before:absolute before:bg-white before:z-10 before:w-2/3 before:h-px before:bottom-1/4 before:left-1/2 before:-translate-x-1/2 hover:before:scale-x-125 before:transition"} relative hover:after:translate-y-0 p-5 overflow-hidden after:absolute after:w-full after:h-full after:inset-0 after:-translate-y-full after:transition after:duration-300 after:-z-10 after:bg-primary hover:text-white transition duration-300`}
+              className={`${item.highligted && "bg-black !px-5 hover:bg-[#161616] before:absolute before:bg-white before:z-10 before:w-2/3 before:h-px before:bottom-1/4 before:left-1/2 before:-translate-x-1/2 hover:before:scale-x-125 before:transition"} relative hover:after:translate-y-0 p-5 md:px-1 lg:px-5 overflow-hidden after:absolute after:w-full after:h-full after:inset-0 after:-translate-y-full after:transition after:duration-300 after:-z-10 after:bg-primary hover:text-white transition duration-300 after:hidden after:lg:block`}
             >
               {item.name}
             </Link>

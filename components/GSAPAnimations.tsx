@@ -36,7 +36,7 @@ const GSAPAnimations = () => {
         left: "100%",
         width: 0,
         duration: 0.5,
-        ease: "power2.inOut",
+        ease: "sine",
       })
       .to(headings, {
         opacity: 1,
