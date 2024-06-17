@@ -19,7 +19,7 @@ const SolutionsSection = () => {
         <div className="mt-16">
           <div className="w-full flex flex-col gap-20">
             <SolutionCard
-              img={"/img/consulting.webp"}
+              img={"/img/maru.webp"}
               title="Consultoría"
               text="En Ns Group somos pioneros en la combinación y análisis híbrido de
               Analítica Aumentada, Inteligencia Artificial, Social Science y
@@ -30,13 +30,13 @@ const SolutionsSection = () => {
               de comunicación, disruptivas e innovadoras."
             />
             <SolutionCard
-              img={"/img/platforms.webp"}
+              img={"/img/manos.webp"}
               title="Plataformas"
               reversed
               text="Proceso de Contamos con plataformas para capturar y mantenerte informado de todo lo que sucede en el entorno digital (redes sociales, medios, blogs, sitios). Generamos alertas frente a cambios de tendencias en redes sociales o participación de personalidades influyentes en el buzz social de nuestros clientes."
             />
             <SolutionCard
-              img={"/img/data.webp"}
+              img={"/img/juli.webp"}
               title="Data & Insights"
               text="Profundizamos en el conocimiento de tus consumidores y obtenemos el máximo valor de sus datos. Identificamos las tendencias emergentes en tu mercado y comparamos tu posicionamiento de marca con las aspiraciones de los consumidores. Clasificamos los perfiles de tus clientes e identificamos sus motivaciones."
             />
