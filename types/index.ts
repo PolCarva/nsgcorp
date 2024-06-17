@@ -26,6 +26,7 @@ interface FeaturedImage {
 
 interface CategoryNode {
   slug: string;
+  name: string;
 }
 
 interface Categories {
@@ -40,4 +41,9 @@ export interface Post {
   featuredImage: FeaturedImage;
   categories: Categories;
   content?: string | TrustedHTML;
+}
+
+
+export interface PostList {
+  nodes: Post[];
 }

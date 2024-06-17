@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <Container>
       <section className="h-[80svh] md:h-[60svh] pt-20 lg:pt-5 flex items-center">
-        <div className="mx-auto max-w-screen-lg w-full flex flex-col justify-center gap-20 md:pl-0 relative">
+        <div className="mx-auto 2xl:max-w-full max-w-screen-lg w-full flex flex-col justify-center gap-20 md:pl-0 relative">
           <div
             className={`uppercase leading-none relative tracking-wider text-[3.9rem] md:text-9xl 2xl:text-[10rem] lg:text-[7rem] ${durk.className}`}
           >
@@ -31,9 +31,9 @@ const HeroSection = () => {
                 <span>
                   Comunicación <span className="hidden lg:inline">&</span>
                 </span>
-                <span className="flex-1 w-full bg-primary"></span>
+                <span className="flex-1 w-full bg-primary scale-y-105"></span>
               </span>
-              <span className="flex-col relative z-10 gap-4 md:gap-0 md:flex-row w-full flex">
+              <span className="flex-col relative z-10 gap-y-4 lg:gap-0 lg:flex-row w-full flex">
                 <span className="flex w-full">
                   <span>Big Data</span>
                   <span className="flex-1 bg-primary"></span>
@@ -41,7 +41,7 @@ const HeroSection = () => {
                 <Link
                   href={"#contacto"}
                   scroll
-                  className={`${helvetica.className} w-full py-5 md:px-[12%] md:py-8 md:w-fit lg:px-[10.75%] 2xl:px-[6%] grid group place-content-center flex-1 text-white bg-black`}
+                  className={`${helvetica.className} w-full py-5 md:px-[12%] md:py-8 lg:w-fit lg:px-[10.75%] 2xl:px-[6%] grid group place-content-center flex-1 text-white bg-black`}
                 >
                   <span className="capitalize group-hover:w-[110%] transition text-xl md:text-2xl relative">
                     Contáctanos

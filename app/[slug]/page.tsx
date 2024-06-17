@@ -28,6 +28,16 @@ const Page = () => {
           return;
         }
 
+        const hasEmpresasCategory = postData?.categories?.nodes?.some(
+          (category: { slug: string; name: string }) =>
+            category.slug === "empresas"
+        );
+
+        if (!hasEmpresasCategory) {
+          router.push("/not-found");
+          return;
+        }
+
         setPost(postData);
       } catch (error) {
         console.error("Error al obtener el post:", error);
@@ -42,8 +52,10 @@ const Page = () => {
     if (post && post.content) {
       const container = document.getElementById("post-content");
       if (container) {
-        const buttons = container.querySelectorAll(".wp-block-button__link.wp-element-button");
-        buttons.forEach(button => {
+        const buttons = container.querySelectorAll(
+          ".wp-block-button__link.wp-element-button"
+        );
+        buttons.forEach((button) => {
           button.classList.add(durk.className);
         });
       }
@@ -57,7 +69,9 @@ const Page = () => {
   return (
     <Container>
       <div className="md:w-2/3 mx-auto flex flex-col gap-5 justify-center items-start pb-12">
-        <h1 className={`${durk.className} self-start uppercase text-6xl md:text-9xl`}>
+        <h1
+          className={`${durk.className} self-start uppercase text-6xl md:text-9xl`}
+        >
           {post.title}
         </h1>
         {post.content && (

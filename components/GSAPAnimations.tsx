@@ -15,6 +15,7 @@ const GSAPAnimations = () => {
     const tl = gsap.timeline();
     const images = gsap.utils.toArray("[data-animate-image]");
     const numbers = gsap.utils.toArray("[data-animate-increasing-number]");
+    const hidden = gsap.utils.toArray("[data-animate-hidden]");
 
     tl
       .to("[data-animate-loader]", {
@@ -44,6 +45,16 @@ const GSAPAnimations = () => {
         stagger: 0.3,
         duration: 1,
       });
+
+    hidden.forEach((item: any) => {
+      gsap.to(item, {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: item,
+          start: "top 80%",
+        },
+      });
+    });
 
     numbers.forEach((numberElement: any) => {
       gsap.fromTo(

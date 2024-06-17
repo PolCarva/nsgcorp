@@ -1,4 +1,3 @@
-import { revalidatePath } from "next/cache";
 import graphqlRequest from "./graphqlRequest";
 
 export async function getAllPosts(category?: string) {
@@ -30,6 +29,7 @@ export async function getAllPosts(category?: string) {
           categories {
             nodes {
               slug
+              name
             }
           }
         }
