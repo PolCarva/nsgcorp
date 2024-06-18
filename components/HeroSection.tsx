@@ -13,7 +13,11 @@ const HeroSection = () => {
           <div
             className={`uppercase leading-none relative tracking-wider text-[3.9rem] md:text-9xl 2xl:text-[10rem] lg:text-[7rem] ${durk.className}`}
           >
-            <Tag text="Nsg Corp" delay={1.1} className="absolute mb-5 bottom-full left-0" />
+            <Tag
+              text="Nsg Corp"
+              delay={1.1}
+              className="absolute mb-5 bottom-full left-0"
+            />
             <div
               data-animate-image
               className='hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-7/12 h-[120%] bg-[url("/img/hero_img.webp")]'
@@ -24,18 +28,18 @@ const HeroSection = () => {
             />
             <h1 id="title" className="relative">
               <span className="w-full flex relative z-10">
-                <span>Social Science</span>
+                <span>Social Science {" "}</span>
                 <span className="flex-1 bg-primary"></span>
               </span>
               <span className="w-full flex relative z-10">
                 <span>
-                  Comunicación <span className="hidden lg:inline">&</span>
+                  Comunicación{" "}<span className="hidden lg:inline">&{" "}</span>
                 </span>
                 <span className="flex-1 w-full bg-primary scale-y-105"></span>
               </span>
               <span className="flex-col relative z-10 gap-y-4 lg:gap-0 lg:flex-row w-full flex">
                 <span className="flex w-full">
-                  <span>Big Data</span>
+                  <span>Big Data{" "}</span>
                   <span className="flex-1 bg-primary"></span>
                 </span>
                 <Link

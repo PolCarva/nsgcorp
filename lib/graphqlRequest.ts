@@ -1,7 +1,7 @@
 import { STABLES } from "@/stables";
 
 export default async function graphqlRequest(query: { query: string }) {
-    const url = `${STABLES.API_URL}`; // Usa la ruta reescrita en lugar de la URL completa
+    const url = `${STABLES.API_URL}`;
 
     const headers: { 'Content-Type': string } = { 'Content-Type': 'application/json' };
 
@@ -12,7 +12,6 @@ export default async function graphqlRequest(query: { query: string }) {
     });
 
     if (!res.ok) {
-        // Manejo de errores si la respuesta no es ok (opcional)
         console.error(`Error: ${res.statusText}`);
         throw new Error(`Error: ${res.statusText}`);
     }

@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <link rel="apple-touch-icon" href="/icono-ns.png" />
+      </head>
       <body className={`bg-white text-black max-w-[100svw] ${helvetica.className}`}>
         <Header />
         <main className="pt-20 md:pt-5">{children}</main>
