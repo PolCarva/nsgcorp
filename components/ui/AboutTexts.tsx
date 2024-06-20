@@ -5,40 +5,57 @@ const TextosQuienesSomos = () => {
   return (
     <div className="grid lg:gap-x-20 gap-y-12 md:gap-y-20 w-full grid-cols-1 mb-20 lg:mb-16 lg:grid-cols-12">
       {/* --- ABOUT --- */}
-      <div className="col-span-6 text-2xl mt-8 lg:-mt-12">
-        <p className="mb-5">
-          Somos un{" "}
-          <span className="font-bold text-primary">
-            ecosistema de comunicación estratégica
-          </span>{" "}
-          especializado en
-          <span className="font-bold text-primary">
-            {" "}
-            asuntos empresariales, inteligencia electoral y public affairs.
-          </span>
+      <div className="col-span-8 flex flex-col gap-5 mt-8 text-xl">
+        <HeadingThree
+          mobilePosition="left"
+          text="Exelencia y Experiencia Comprobada"
+        />
+
+        <p className="mt-6">
+          Con{" "}
+          <span className="font-bold text-primary">más de 200 proyectos </span>{" "}
+          de comunicación estratégica exitosos y experiencia en inteligencia
+          electoral en{" "}
+          <span className="font-bold text-primary">más de 40 campañas </span> de
+          alto perfil.
         </p>
-        <p className="mb-5">
-          Somos pioneros en la combinación y análisis híbrido de la
+        <p>
+          A través de nuestra unidad de inteligencia de datos,{" "}
           <span className="font-bold text-primary">
-            {" "}
-            analítica aumentada, inteligencia artificial, ciencias sociales y
-            experiencia humana
+            proveemos de la información y análisis especializado para la
+            prevención y protección de activos reputacionales estratégicos,
+            prevención de riesgos y gestión de crisis
+          </span>
+          . Todos nuestros servicios de asesoría están sustentados en datos y
+          potenciados por IA.
+        </p>
+
+        <p>
+          Nuestro enfoque boutique garantiza a cada cliente una{" "}
+          <span className="font-bold text-primary">
+            solución única y a medida
+          </span>
+          , respaldada por nuestra vasta experiencia.{" "}
+        </p>
+
+        <p>
+          Combinamos la{" "}
+          <span className="font-bold text-primary">
+            atención personalizada con estrategias probadas
+          </span>
+          , creando soluciones que impulsan el éxito y forjan legados duraderos.{" "}
+          <span className="font-bold text-primary">
+            El reconocimiento y la confianza de líderes y organizaciones avalan
+            la calidad transformadora de nuestro trabajo
           </span>
           .
         </p>
-        <p>
-          Este enfoque nos permite{" "}
-          <span className="font-bold text-primary">
-            comprender a fondo las problemáticas y desafíos
-          </span>{" "}
-          de los proyectos y causas de nuestros clientes.
-        </p>
       </div>
       {/* --- END ABOUT --- */}
-      <div className="col-span-6"></div>
+      <div className="col-span-6 md:col-span-2"></div>
       {/* --- NUESTRA MISIÓN --- */}
       <div className="col-span-6 flex flex-col gap-5">
-        <HeadingThree text="Nuestra Misión" />
+        <HeadingThree mobilePosition="left" text="Nuestra Misión" />
         <p className="text-xl">
           Respaldar a nuestros clientes en la consecución de sus objetivos en un
           mundo{" "}
@@ -67,7 +84,7 @@ const TextosQuienesSomos = () => {
       {/* --- END NUESTRA MISIÓN --- */}
       {/* --- NUESTRA HISTORIA --- */}
       <div className="col-span-6 flex flex-col gap-5">
-        <HeadingThree text="Nuestra Historia" />
+        <HeadingThree mobilePosition="left" text="Nuestra Historia" />
 
         <p className="text-xl">
           Desde 2010,{" "}

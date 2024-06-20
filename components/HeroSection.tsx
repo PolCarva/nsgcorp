@@ -8,13 +8,13 @@ import Tag from "./ui/Tag";
 const HeroSection = () => {
   return (
     <Container>
-      <section className="h-[80svh] md:h-[60svh] pt-20 lg:pt-5 flex items-center">
+      <section className="h-[80svh] md:h-[60svh] md:pt-20 lg:pt-5 flex items-center">
         <div className="mx-auto 2xl:max-w-full max-w-screen-lg w-full flex flex-col justify-center gap-20 md:pl-0 relative">
           <div
-            className={`uppercase leading-none relative tracking-wider text-[3.9rem] md:text-9xl 2xl:text-[10rem] lg:text-[7rem] ${durk.className}`}
+            className={`uppercase leading-none relative tracking-wider text-[3.5rem] md:text-8xl 2xl:text-[10rem] lg:text-[7rem] ${durk.className}`}
           >
             <Tag
-              text="Nsg Corp"
+              text="Ns Group"
               delay={1.1}
               className="absolute mb-5 bottom-full left-0"
             />
@@ -27,25 +27,30 @@ const HeroSection = () => {
               className="h-0 w-24 left-0 top-1/2 z-30 -translate-y-1/2 opacity-0 absolute bg-primary"
             />
             <h1 id="title" className="relative">
-              <span className="w-full flex relative z-10">
-                <span>Social Science {" "}</span>
+              <span className="w-full flex flex-col md:flex-row md:gap-4 relative z-10">
+                <span className="flex">
+                  <span>Social Data </span>
+                  <span className="flex-1 bg-primary"></span>
+                </span>
+                <span className="flex">
+                  <span>House De</span>
+                  <span className="flex-1 bg-primary"></span>
+                </span>
                 <span className="flex-1 bg-primary"></span>
               </span>
               <span className="w-full flex relative z-10">
-                <span>
-                  Comunicación{" "}<span className="hidden lg:inline">&{" "}</span>
-                </span>
+                <span>Comunicación </span>
                 <span className="flex-1 w-full bg-primary scale-y-105"></span>
               </span>
               <span className="flex-col relative z-10 gap-y-4 lg:gap-0 lg:flex-row w-full flex">
                 <span className="flex w-full">
-                  <span>Big Data{" "}</span>
+                  <span>Estratégica </span>
                   <span className="flex-1 bg-primary"></span>
                 </span>
                 <Link
                   href={"#contacto"}
                   scroll
-                  className={`${helvetica.className} w-full py-5 md:px-[12%] md:py-8 lg:w-fit lg:px-[10.75%] 2xl:px-[6%] grid group place-content-center flex-1 text-white bg-black`}
+                  className={`${helvetica.className} w-full py-5 lg:px-[9.2%] 2xl:px-[3.25rem] md:py-8 lg:w-fit grid group place-content-center flex-1 text-white bg-black`}
                 >
                   <span className="capitalize group-hover:w-[110%] transition text-xl md:text-2xl relative">
                     Contáctanos
