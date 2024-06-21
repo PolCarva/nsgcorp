@@ -30,7 +30,7 @@ const CompaniesSection = () => {
             className="w-fit md:absolute md:top-[1em] lg:top-1/3 md:right-0"
           />
            <div data-animate-image className='absolute hidden md:block left-52 top-0 -z-10 bg-[url("/img/hero_img.webp")] bg-cover bg-right w-1/3 h-full'/>
-          <HeadingTwo top="Nuestras" bottom="Empresas" />
+          <HeadingTwo top="Unidades" bottom="Especializadas" />
         </div>
         {posts === null ? (
           <div className="flex flex-col gap-5 mt-16">

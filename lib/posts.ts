@@ -3,12 +3,12 @@ import graphqlRequest from "./graphqlRequest";
 export async function getAllPosts(category?: string) {
   let categoryFilter = "";
   if (category) {
-    categoryFilter = `where: { categoryName: "${category}" }`;
+    categoryFilter = `categoryName: "${category}", `;
   }
 
   const query = {
     query: `query getAllPosts {
-      posts(first: 50 ${categoryFilter}) {
+      posts(first: 50, where: { ${categoryFilter}orderby: { field: TITLE, order: ASC } }) {
         nodes {
           date
           slug
