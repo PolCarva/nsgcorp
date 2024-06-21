@@ -33,6 +33,8 @@ const groupByCountry = (persons: Post[]): GroupedPersons => {
 
 const TeamListSection = async () => {
   const persons: PostList = await getAllPosts("equipo");
+  console.log(persons);
+  
 
   revalidatePath("/equipo");
 
