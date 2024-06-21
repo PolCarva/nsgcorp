@@ -9,12 +9,12 @@ const SolutionsSection = () => {
     <section id="soluciones" className="pt-20">
       <Container>
         <div className="relative">
-          <Tag text="Expertease" className="absolute mb-5 bottom-full left-0" />
+          <Tag text="Soluciones" className="absolute mb-5 bottom-full left-0" />
           <div
             data-animate-image
             className='absolute hidden md:block left-60 top-0 -z-10 bg-[url("/img/hero_img.webp")] bg-cover bg-right w-1/2 h-5/6'
           />
-          <HeadingTwo top="Nuestro" bottom="Abordaje" />
+          <HeadingTwo top="Mirada" bottom="Innovadora" />
         </div>
         <div className="mt-16">
           <div className="w-full flex flex-col gap-20">
@@ -100,7 +100,7 @@ const SolutionsSection = () => {
             <SolutionCard
               img={"/img/juli.webp"}
               title="Data Analytics "
-              secondTitle="& Socla Insights"
+              secondTitle="& Social Insights"
             >
               <p className="text-xl">
                 Profundizamos en el conocimiento de tus audiencias clave y
