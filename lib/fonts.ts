@@ -1,7 +1,8 @@
 
 import localfont from "next/font/local";
 
-export const helvetica = localfont({
+
+/* export const helvetica = localfont({
   src: [
     {
       path: "../public/fonts/helvetica/Helvetica.ttf",
@@ -9,6 +10,20 @@ export const helvetica = localfont({
     },
     {
       path: "../public/fonts/helvetica/Helvetica-Bold.ttf",
+      weight: "800",
+    },
+  ],
+  variable: "--font-helvetica",
+}); */
+
+export const helvetica = localfont({
+  src: [
+    {
+      path: "../public/fonts/montserrat/Montserrat-VariableFont_wght.ttf",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/montserrat/Montserrat-VariableFont_wght.ttf",
       weight: "800",
     },
   ],
