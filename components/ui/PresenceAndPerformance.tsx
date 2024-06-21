@@ -13,7 +13,7 @@ const PresenceAndPerformance = () => {
         <HeadingThree text="Presencia & Desempeño" position="right" />
       </div>
       <div className="order-1"></div>
-      <PresenceAndPerformanceCard number={86} text="Proyectos" />
+      <PresenceAndPerformanceCard number={200} mesure="+" text="Proyectos" />
       <PresenceAndPerformanceCard number={25} mesure="MM" text="Inversión I+D" />
 
     </div>

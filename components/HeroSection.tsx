@@ -50,7 +50,7 @@ const HeroSection = () => {
                 <Link
                   href={"#contacto"}
                   scroll
-                  className={`${helvetica.className} w-full py-5 lg:px-[9.2%] 2xl:px-[3.25rem] md:py-8 lg:w-fit grid group place-content-center flex-1 text-white bg-black`}
+                  className={`${helvetica.className} w-full py-5 lg:px-[9.2%] 2xl:px-[6%] md:py-8 lg:w-fit grid group place-content-center flex-1 text-white bg-black`}
                 >
                   <span className="capitalize group-hover:w-[110%] transition text-xl md:text-2xl relative">
                     Contáctanos
