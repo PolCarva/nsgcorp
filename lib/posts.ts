@@ -97,27 +97,34 @@ export async function getTeam() {
           prioridad
           nombre
           imagen {
-            node {
-              altText
-              mediaDetails {
-                file
-                sizes {
-                  sourceUrl
-                  width
-                  height
-                }
+          node {
+            altText
+            mediaDetails {
+              file
+              sizes {
+                sourceUrl
+                width
+                height
               }
             }
           }
         }
       }
+      categories {
+        nodes {
+          name
+          slug
+        }
+      }
     }
+  }
+
 }
 `,
   };
 
   const resJson = await graphqlRequest(query);
   const team = resJson.data.posts;
-
+  
   return team;
 }

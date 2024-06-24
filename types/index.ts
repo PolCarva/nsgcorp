@@ -59,6 +59,7 @@ export interface TeamImage {
 }
 
 export interface Team {
+  categories: Categories;
   equipo: {
     cargo: string;
     fieldGroupName: string;
