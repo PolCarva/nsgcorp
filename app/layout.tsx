@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/ui/Header";
 import "./globals.css";
-import { helvetica } from "@/lib/fonts";
+import { montserrat } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Ns Group | Comunicación Estratégica",
@@ -19,7 +19,7 @@ export default function RootLayout({
       <head>
         <link rel="apple-touch-icon" href="/icono-ns.png" />
       </head>
-      <body className={`bg-white text-black max-w-[100svw] ${helvetica.className}`}>
+      <body className={`bg-white text-black max-w-[100svw] ${montserrat.className}`}>
         <Header />
         <main className="pt-20 md:pt-5">{children}</main>
       </body>

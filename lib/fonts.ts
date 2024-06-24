@@ -5,18 +5,18 @@ import localfont from "next/font/local";
 /* export const helvetica = localfont({
   src: [
     {
-      path: "../public/fonts/helvetica/Helvetica.ttf",
+      path: "../public/fonts/helvetica/helvetica.ttf",
       weight: "400",
     },
     {
-      path: "../public/fonts/helvetica/Helvetica-Bold.ttf",
+      path: "../public/fonts/helvetica/helvetica-Bold.ttf",
       weight: "800",
     },
   ],
   variable: "--font-helvetica",
 }); */
 
-export const helvetica = localfont({
+export const montserrat = localfont({
   src: [
     {
       path: "../public/fonts/montserrat/Montserrat-VariableFont_wght.ttf",
@@ -27,7 +27,7 @@ export const helvetica = localfont({
       weight: "800",
     },
   ],
-  variable: "--font-helvetica",
+  variable: "--font-montserrat",
 });
 
 export const durk = localfont({

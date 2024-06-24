@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-helvetica: 'Helvetica', sans-serif;
+  --font-montserrat: 'montserrat', sans-serif;
   --font-durk: 'Durk', sans-serif;
 }
 
@@ -21,8 +21,8 @@
   font-family: var(--font-durk);
 }
 
-.font-helvetica {
-  font-family: var(--font-helvetica);
+.font-montserrat {
+  font-family: var(--font-montserrat);
 }
 
 .wp-block-button {

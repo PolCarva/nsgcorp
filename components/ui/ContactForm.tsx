@@ -1,6 +1,6 @@
 "use client";
 
-import { durk, helvetica } from "@/lib/fonts";
+import { durk, montserrat } from "@/lib/fonts";
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
@@ -110,7 +110,7 @@ const ContactForm = () => {
   const getInputClass = (field: string) => {
     const isError = errorField.field === field;
     return `${
-      helvetica.className
+      montserrat.className
     } outline-none focus:ring-2 focus:ring-primary/30 tracking-wide text-xl border-2 border-primary w-full p-5 ${
       isError ? "border-red-500" : ""
     }`;
@@ -169,7 +169,7 @@ const ContactForm = () => {
             placeholder="Escribe el mensaje..."
             id="body_inp"
             className={`${
-              helvetica.className
+              montserrat.className
             } min-h-60 resize-y outline-none focus:ring-2 focus:ring-primary/30 tracking-wide text-xl border-2 border-primary w-full p-5 ${
               errorField.field === "body" ? "border-red-500" : ""
             }`}

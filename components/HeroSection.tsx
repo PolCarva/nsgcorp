@@ -1,4 +1,4 @@
-import { durk, helvetica } from "@/lib/fonts";
+import { durk, montserrat } from "@/lib/fonts";
 import React from "react";
 import Container from "./ui/Container";
 import Link from "next/link";
@@ -50,7 +50,7 @@ const HeroSection = () => {
                 <Link
                   href={"#contacto"}
                   scroll
-                  className={`${helvetica.className} w-full py-5 lg:px-[9.2%] 2xl:px-[6%] md:py-8 lg:w-fit grid group place-content-center flex-1 text-white bg-black`}
+                  className={`${montserrat.className} w-full py-5 lg:px-[9.2%] 2xl:px-[6%] md:py-8 lg:w-fit grid group place-content-center flex-1 text-white bg-black`}
                 >
                   <span className="capitalize group-hover:w-[110%] transition text-xl md:text-2xl relative">
                     Contáctanos

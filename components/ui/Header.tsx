@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { helvetica } from "@/lib/fonts";
+import { montserrat } from "@/lib/fonts";
 
 const navItems = [
   { name: "Nosotros", href: "/#nosotros" },
@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header
-      className={`${helvetica.className} w-full mx-auto fixed md:sticky top-0 right-0 left-0 bg-[url("/img/banner.webp")]  py-5 z-50`}
+      className={`${montserrat.className} w-full mx-auto fixed md:sticky top-0 right-0 left-0 bg-[url("/img/banner.webp")]  py-5 z-50`}
     >
       <div className="container 2xl:max-w-screen-xl px-5 mx-auto flex justify-between items-center">
         <Link href="/" className="max-w-32 md:max-w-max">

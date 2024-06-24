@@ -26,7 +26,7 @@ const config: Config = {
         }
       },
       fontFamily: {
-        helvetica: ["var(--font-helvetica)"],
+        montserrat: ["var(--font-montserrat)"],
         durk: ["var(--font-durk)"],
       },
     },

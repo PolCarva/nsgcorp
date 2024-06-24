@@ -17,12 +17,12 @@ const HeadingThree = ({
   return (
     <h3
       data-animate-in
-      className={`${durk.className} text-5xl lg:text-8xl uppercase ${
+      className={`${durk.className} text-5xl lg:text-7xl uppercase ${
         position === "center"
-          ? "lg:text-center"
+          ? "md:text-center"
           : position === "right"
-          ? "lg:text-right"
-          : "lg:text-left"
+          ? "md:text-right"
+          : "md:text-left"
       }
       ${
         mobilePosition === "center"

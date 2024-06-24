@@ -5,7 +5,7 @@ const TextosQuienesSomos = () => {
   return (
     <div className="grid lg:gap-x-20 gap-y-12 md:gap-y-20 w-full grid-cols-1 mb-20 lg:mb-16 lg:grid-cols-12">
       {/* --- ABOUT --- */}
-      <div className="col-span-8 flex flex-col gap-5 mt-8 text-xl">
+      <div className="col-span-8 flex flex-col gap-5 mt-8 md:-mt-8 text-xl">
         <HeadingThree
           mobilePosition="left"
           text="Exelencia y "
