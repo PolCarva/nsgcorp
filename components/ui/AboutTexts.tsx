@@ -13,43 +13,28 @@ const TextosQuienesSomos = () => {
         />
 
         <p className="mt-6">
-          Con{" "}
-          <span className="font-bold text-primary">más de 200 proyectos </span>{" "}
-          de comunicación estratégica exitosos y experiencia en inteligencia
-          electoral en{" "}
-          <span className="font-bold text-primary">más de 40 campañas </span> de
-          alto perfil.
+          Con más de 200 proyectos de comunicación estratégica exitosos y
+          experiencia en inteligencia electoral en más de 40 campañas de alto
+          perfil.
         </p>
         <p>
-          A través de nuestra unidad de inteligencia de datos,{" "}
-          <span className="font-bold text-primary">
-            proveemos de la información y análisis especializado para la
-            prevención y protección de activos reputacionales estratégicos,
-            prevención de riesgos y gestión de crisis
-          </span>
-          . Todos nuestros servicios de asesoría están sustentados en datos y
-          potenciados por IA.
+          A través de nuestra unidad de inteligencia de datos, proveemos de la
+          información y análisis especializado para la prevención y protección
+          de activos reputacionales estratégicos, prevención de riesgos y
+          gestión de crisis . Todos nuestros servicios de asesoría están
+          sustentados en datos y potenciados por IA.
         </p>
 
         <p>
-          Nuestro enfoque boutique garantiza a cada cliente una{" "}
-          <span className="font-bold text-primary">
-            solución única y a medida
-          </span>
-          , respaldada por nuestra vasta experiencia.{" "}
+          Nuestro enfoque boutique garantiza a cada cliente una solución única y
+          a medida , respaldada por nuestra vasta experiencia.{" "}
         </p>
 
         <p>
-          Combinamos la{" "}
-          <span className="font-bold text-primary">
-            atención personalizada con estrategias probadas
-          </span>
-          , creando soluciones que impulsan el éxito y forjan legados duraderos.{" "}
-          <span className="font-bold text-primary">
-            El reconocimiento y la confianza de líderes y organizaciones avalan
-            la calidad transformadora de nuestro trabajo
-          </span>
-          .
+          Combinamos la atención personalizada con estrategias probadas ,
+          creando soluciones que impulsan el éxito y forjan legados duraderos.{" "}
+          El reconocimiento y la confianza de líderes y organizaciones avalan la
+          calidad transformadora de nuestro trabajo .
         </p>
       </div>
       {/* --- END ABOUT --- */}
@@ -59,27 +44,17 @@ const TextosQuienesSomos = () => {
         <HeadingThree mobilePosition="left" text="Nuestra Misión" />
         <p className="text-xl">
           Respaldar a nuestros clientes en la consecución de sus objetivos en un
-          mundo{" "}
-          <span className="font-bold text-primary">
-            interconectado y competitivo
-          </span>
-          .
+          mundo interconectado y competitivo .
         </p>
         <p className="text-xl">
-          Logramos esto unificando nuestras especialidades y experiencia en
-          <span className="font-bold text-primary">
-            {" "}
-            Ciencias Sociales, Big Data e Inteligencia Artificial
-          </span>
-          , ofreciendo soluciones integrales e innovadoras.
+          Logramos esto unificando nuestras especialidades y experiencia en{" "}
+          Ciencias Sociales, Big Data e Inteligencia Artificial , ofreciendo
+          soluciones integrales e innovadoras.
         </p>
         <p className="text-xl">
           Con foco en las personas y con un proceso de innovación permanente ,{" "}
-          <span className="font-bold text-primary">
-            aseguramos el acompañamiento de la dinámica y la escalabilidad del
-            negocio de nuestros clientes{" "}
-          </span>
-          .
+          aseguramos el acompañamiento de la dinámica y la escalabilidad del
+          negocio de nuestros clientes .
         </p>
       </div>
       {/* --- END NUESTRA MISIÓN --- */}
@@ -88,26 +63,15 @@ const TextosQuienesSomos = () => {
         <HeadingThree mobilePosition="left" text="Nuestra Historia" />
 
         <p className="text-xl">
-          Desde 2010,{" "}
-          <span className="font-bold text-primary">
-            lideramos la innovación incorporando tecnologías de última
-            generación{" "}
-          </span>
-          y unidades especializadas en Gestión Reputacional, Manejo de Crisis,
-          Promoción de Agenda para Instituciones Públicas & Privadas, Causas de
-          la Sociedad Civil e Inteligencia Electoral.
+          Desde 2010, lideramos la innovación incorporando tecnologías de última
+          generación y unidades especializadas en Gestión Reputacional, Manejo
+          de Crisis, Promoción de Agenda para Instituciones Públicas & Privadas,
+          Causas de la Sociedad Civil e Inteligencia Electoral.
         </p>
         <p className="text-xl">
-          En NS Group{" "}
-          <span className="font-bold text-primary">
-            desafiamos constantemente el statu quo{" "}
-          </span>
-          , evolucionando hacia soluciones innovadoras impulsadas por nuestra
-          experiencia en{" "}
-          <span className="font-bold text-primary">
-            Ciencias Sociales y Data Analytics & AI
-          </span>
-          .
+          En NS Group desafiamos constantemente el statu quo , evolucionando
+          hacia soluciones innovadoras impulsadas por nuestra experiencia en{" "}
+          Ciencias Sociales y Data Analytics & AI .
         </p>
       </div>
       {/* --- END NUESTRA HISTORIA --- */}
