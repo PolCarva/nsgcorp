@@ -43,7 +43,27 @@ export interface Post {
   content?: string | TrustedHTML;
 }
 
-
 export interface PostList {
   nodes: Post[];
+}
+
+export interface TeamList {
+  nodes: Team[];
+}
+
+export interface TeamImage {
+  node: {
+    altText: string;
+    mediaDetails: MediaDetails;
+  };
+}
+
+export interface Team {
+  equipo: {
+    cargo: string;
+    fieldGroupName: string;
+    prioridad: number | 0;
+    nombre: string;
+    imagen: TeamImage;
+  };
 }

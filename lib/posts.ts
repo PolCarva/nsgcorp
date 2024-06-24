@@ -8,7 +8,7 @@ export async function getAllPosts(category?: string) {
 
   const query = {
     query: `query getAllPosts {
-      posts(first: 50, where: { ${categoryFilter}orderby: { field: TITLE, order: ASC } }) {
+      posts(first: 100, where: { ${categoryFilter}orderby: { field: TITLE, order: ASC } }) {
         nodes {
           date
           slug
@@ -84,4 +84,40 @@ export async function getSinglePost(slug: string) {
   const singlePost = resJson.data.post;
 
   return singlePost;
+}
+
+export async function getTeam() {
+  const query = {
+    query: `query getTeam {
+    posts(first: 100 where: { categoryName: "equipo" } ) {
+      nodes {
+        equipo {
+          cargo
+          fieldGroupName
+          prioridad
+          nombre
+          imagen {
+            node {
+              altText
+              mediaDetails {
+                file
+                sizes {
+                  sourceUrl
+                  width
+                  height
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+`,
+  };
+
+  const resJson = await graphqlRequest(query);
+  const team = resJson.data.posts;
+
+  return team;
 }
