@@ -130,7 +130,7 @@ const GSAPAnimations = () => {
       });
     });
   });
-  return <div></div>;
+  return null;
 };
 
 export default GSAPAnimations;
