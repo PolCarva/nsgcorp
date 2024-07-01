@@ -8,7 +8,7 @@ import Tag from "./ui/Tag";
 const HeroSection = () => {
   return (
     <Container>
-      <section className="h-[80svh] md:h-[60svh] md:pt-40 xl:pt-5 flex items-center">
+      <section className="h-[80svh] md:h-[60svh] md:pt-40 xl:pt-26 2xl:pt-40 flex items-center">
         <div className="mx-auto 2xl:max-w-full max-w-screen-lg w-full flex flex-col justify-center gap-20 md:pl-0 relative">
           <div
             className={`uppercase leading-none relative tracking-wider text-[3.5rem] md:text-8xl 2xl:text-[10rem] lg:text-[7rem] ${durk.className}`}
