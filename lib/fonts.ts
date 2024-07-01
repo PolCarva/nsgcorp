@@ -46,4 +46,23 @@ export const durk = localfont({
     },
   ],
   variable: "--font-durk",
-});
+}); 
+
+
+/* export const durk = localfont({
+  src: [
+    {
+      path: "../public/fonts/yanone_kaffeesatz/YanoneKaffeesatz-Bold.ttf",
+      weight: "300",
+    },
+    {
+      path: "../public/fonts/yanone_kaffeesatz/YanoneKaffeesatz-Bold.ttf",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/yanone_kaffeesatz/YanoneKaffeesatz-Bold.ttf",
+      weight: "800",
+    },
+  ],
+  variable: "--font-durk",
+}); */
