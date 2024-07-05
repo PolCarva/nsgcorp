@@ -29,7 +29,7 @@ const TeamListSection = async () => {
                 src={person?.equipo?.imagen?.node?.mediaDetails?.sizes[0]?.sourceUrl}
               />
               <h2
-                className={`${durk.className} tracking-wide uppercase text-3xl`}
+                className={`${durk.className} tracking-wide uppercase text-2xl md:text-3xl`}
               >
                 {person?.equipo?.nombre}
               </h2>
