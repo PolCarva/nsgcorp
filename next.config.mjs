@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  redirects: async () => {
+    return [
+      {
+        source: "/admin",
+        destination: "https://nsgcorpcms.eyewatch.me/admin-login/",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
