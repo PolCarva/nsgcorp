@@ -19,21 +19,21 @@ const TeamListSection = async () => {
           data-animate-stagger
         >
           {persons.nodes.map((person: Team) => (
-            <div key={person?.equipo?.nombre} className="w-full h-full bg-primary p-3">
+            <div key={person?.equipo?.nombre} className="w-full flex flex-col items-center justify-start text-center h-full bg-transparent p-5">
               <Image
                 objectPosition="center"
-                className="w-full aspect-square object-cover"
+                className="w-full border border-black/20 aspect-square object-cover rounded-full mb-2"
                 alt={person?.equipo?.imagen?.node?.altText}
                 width={parseInt(person?.equipo?.imagen?.node?.mediaDetails?.sizes[0]?.width)}
                 height={parseInt(person?.equipo?.imagen?.node?.mediaDetails?.sizes[0]?.height)}
                 src={person?.equipo?.imagen?.node?.mediaDetails?.sizes[0]?.sourceUrl}
               />
               <h2
-                className={`${durk.className} tracking-wide uppercase text-3xl text-white`}
+                className={`${durk.className} tracking-wide uppercase text-3xl`}
               >
                 {person?.equipo?.nombre}
               </h2>
-              <p className="text-semibold text-white/80 line-clamp-2">
+              <p className="text-sm text-black/80 line-clamp-2">
                 {person?.equipo?.cargo?.replace(/(<([^>]+)>)/gi, "").slice(0, 100)}
               </p>
             </div>
