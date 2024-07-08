@@ -20,7 +20,7 @@ const PresenceAndPerformanceCard = ({
           {mesure}
         </span>
       </p>
-      <p className="text-5xl md:text-2xl lg:text-4xl xl:text-5xl uppercase absolute leading-[80%] bottom-1 right-5 text-right">
+      <p className="text-[2.6rem] md:text-2xl lg:text-4xl xl:text-5xl uppercase absolute leading-[80%] bottom-1 right-5 text-right">
         {text}
       </p>
     </div>

@@ -8,7 +8,7 @@ export default async function graphqlRequest(query: { query: string }) {
     const res = await fetch(url, {
         headers,
         method: 'POST',
-        body: JSON.stringify(query)
+        body: JSON.stringify(query),
     });
 
     if (!res.ok) {

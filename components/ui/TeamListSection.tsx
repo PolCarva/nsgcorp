@@ -22,7 +22,7 @@ const TeamListSection = async () => {
             <div key={person?.equipo?.nombre} className="w-full flex flex-col items-center justify-start text-center h-full bg-transparent p-5">
               <Image
                 objectPosition="center"
-                className="w-full border border-black/20 aspect-square object-cover rounded-full mb-2"
+                className="w-10/12 mx-auto border border-black/20 aspect-square object-cover rounded-full mb-2"
                 alt={person?.equipo?.imagen?.node?.altText}
                 width={parseInt(person?.equipo?.imagen?.node?.mediaDetails?.sizes[0]?.width)}
                 height={parseInt(person?.equipo?.imagen?.node?.mediaDetails?.sizes[0]?.height)}
