@@ -18,8 +18,8 @@ const PostCard = ({ post }: { post: Post }) => {
         <Image
           className="col-span-12 md:col-span-4 transition object-cover w-full h-full aspect-video"
           alt={post.title}
-          height={image.height}
-          width={image.width}
+          height={1080}
+          width={1920}
           src={image.src}
         />
       ) : (
