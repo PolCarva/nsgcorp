@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from "react";
 import Container from "./ui/Container";
 import HeadingTwo from "./ui/HeadingTwo";
-import { getAllPosts } from "@/lib/posts";
-import { Post } from "@/types";
+import { getCompanies } from "@/lib/posts";
+import { Empresa } from "@/types";
 import PostCard from "./ui/PostCard";
 import PostCardSkeleton from "./ui/PostCardSkeleton";
 import ClientSlider from "./ui/ClientSlider";
@@ -11,11 +11,12 @@ import HeadingThree from "./ui/HeadingThree";
 import Tag from "./ui/Tag";
 
 const CompaniesSection = () => {
-  const [posts, setPosts] = useState<Post[] | null>(null);
+  const [posts, setPosts] = useState<Empresa[] | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getAllPosts("empresas");
+      const data = await getCompanies();
+
       setPosts(data.nodes);
     };
     fetchData();
@@ -29,7 +30,10 @@ const CompaniesSection = () => {
             text="Ecosistema"
             className="w-fit md:absolute md:top-[1em] lg:top-1/3 md:right-0"
           />
-           <div data-animate-image className='absolute hidden md:block left-52 top-0 -z-10 bg-[url("/img/hero_img.webp")] bg-cover bg-right w-1/3 h-full'/>
+          <div
+            data-animate-image
+            className='absolute hidden md:block left-52 top-0 -z-10 bg-[url("/img/hero_img.webp")] bg-cover bg-right w-1/3 h-full'
+          />
           <HeadingTwo top="Unidades" bottom="Especializadas" />
         </div>
         {posts === null ? (

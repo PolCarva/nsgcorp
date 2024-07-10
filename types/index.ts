@@ -68,3 +68,12 @@ export interface Team {
     imagen: TeamImage;
   };
 }
+
+export interface Empresa {
+  empresas: {
+    thumbnail: FeaturedImage;
+    description: string;
+    title: string;
+  };
+  slug: string;
+}

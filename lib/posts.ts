@@ -125,6 +125,40 @@ export async function getTeam() {
 
   const resJson = await graphqlRequest(query);
   const team = resJson.data.posts;
-  
+
   return team;
+}
+
+export async function getCompanies() {
+  const query = {
+    query: `query getCompanies {
+  posts(first: 100, where: {categoryName: "empresas"}) {
+    nodes {
+      empresas {
+        thumbnail {
+          node {
+            mediaDetails {
+              sizes {
+                height
+                sourceUrl
+                width
+              }
+            }
+          }
+        }
+        description
+        title
+      }
+      slug
+    }
+  }
+}`,
+  };
+
+  const resJson = await graphqlRequest(query);
+  const companies = resJson.data.posts;
+
+  console.log(companies);
+
+  return companies;
 }
