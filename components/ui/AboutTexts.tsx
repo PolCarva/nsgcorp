@@ -8,7 +8,7 @@ const TextosQuienesSomos = () => {
       <div className="col-span-8 flex flex-col gap-5 mt-8 md:-mt-8 text-xl">
         <HeadingThree
           mobilePosition="left"
-          text="Exelencia y "
+          text="Excelencia y "
           secondTitle="Experiencia Comprobada"
         />
 
